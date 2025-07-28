@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: Springboot-Postgres-RDS
+  datasource:
+    url: jdbc:postgresql://myfirstdatabase.cjsw2m8mad24.eu-north-1.rds.amazonaws.com:5432/postgres
+    username: postgres
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    com.nagen.aws: DEBUG
+
+
+server:
+  port: 5000
